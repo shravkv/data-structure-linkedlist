@@ -9,4 +9,10 @@ public class FunctionClass {
 
     public void appendingNode(int i, int i1) {
     }
+
+    public void insertLast(int i) {
+    }
+
+    public void insertInBetween(int i, int i1, int i2) {
+    }
 }
