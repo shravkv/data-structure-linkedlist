@@ -6,4 +6,7 @@ public class FunctionClass {
 
     public void toPrint() {
     }
+
+    public void appendingNode(int i, int i1) {
+    }
 }
