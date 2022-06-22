@@ -39,7 +39,6 @@ public class FunctionClass {
         Node node = new Node(data);
         node.next = currentNode.next;
         currentNode.next = node;
-
     }
 
     public void insertInBetween(int before, int after, int data) {
@@ -56,6 +55,17 @@ public class FunctionClass {
     public void deleteFirst() {
         Node currentNode = head;
         head = head.next;
+    }
+
+    public void deleteLast() {
+        Node currentNode = head, secondLast = null;
+        while (currentNode.next != null) {
+            secondLast = currentNode;
+            currentNode = currentNode.next;
+        }
+        if (secondLast != null) {
+            secondLast.next = null;
+        }
     }
 }
 
