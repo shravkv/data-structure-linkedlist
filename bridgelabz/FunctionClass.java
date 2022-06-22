@@ -3,7 +3,6 @@ package com.bridgelabz;
 public class FunctionClass {
     Node head;
 
-
     public void insertFirstNode(int data) {
         Node node = new Node(data);
         node.setData(data);
@@ -51,7 +50,6 @@ public class FunctionClass {
         currentNode.next = node;
     }
 
-
     public void deleteFirst() {
         Node currentNode = head;
         head = head.next;
@@ -67,5 +65,16 @@ public class FunctionClass {
             secondLast.next = null;
         }
     }
+        public void findNode(int data) {
+            Node currentNode = head;
+            while (currentNode != null) {
+                if (currentNode.data == data) {
+                    System.out.println(data + " Element found in the list ");
+                }
+                currentNode = currentNode.next;
+            }
+    }
 }
+
+
 
