@@ -20,7 +20,6 @@ public class FunctionClass {
         currentNode.setNext(node);
     }
 
-
     public void toPrint() {
         Node currentNode = head;
         System.out.println("Generics LinkedList is :");
@@ -65,14 +64,16 @@ public class FunctionClass {
             secondLast.next = null;
         }
     }
-        public void findNode(int data) {
-            Node currentNode = head;
-            while (currentNode != null) {
-                if (currentNode.data == data) {
-                    System.out.println(data + " Element found in the list ");
-                }
-                currentNode = currentNode.next;
+
+    public void findNode(int data) {
+        Node currentNode = head;
+        while (currentNode != null) {
+            if (currentNode.data == data) {
+                System.out.println(data + " Element found in the list ");
             }
+            currentNode = currentNode.next;
+
+        }
     }
 }
 
