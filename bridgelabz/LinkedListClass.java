@@ -14,5 +14,7 @@ public class LinkedListClass {
         functionClass.findNode(30);
         functionClass.appendingNode(30, 40);
         functionClass.toPrint();
+        functionClass.deleteAnyNode(40);
+        functionClass.toPrint();
     }
 }
